@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="wrap_content"
+        android:layout_height="110dp"
+        android:src="@drawable/ic_launcher_background"
+        tools:layout_editor_absoluteX="111dp"
+        tools:layout_editor_absoluteY="16dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/startBt"
+        app:layout_constraintTop_toBottomOf="@+id/image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="startBt"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="111dp"
+        tools:layout_editor_absoluteY="118dp" />
+
+    <Button
+        android:id="@+id/bindBt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="bindBt"
+        app:layout_constraintTop_toBottomOf="@+id/startBt"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="111dp" />
+
+    <Button
+        android:id="@+id/onbindBt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="onbindBt"
+        app:layout_constraintTop_toBottomOf="@+id/bindBt"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="111dp" />
+
+</android.support.constraint.ConstraintLayout>

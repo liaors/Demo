@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="chartView">
+        <attr name="xylinecolor" format="color"/><!-- xy坐标轴颜色 -->
+        <attr name="xylinewidth" format="dimension"/><!-- xy坐标轴宽度 -->
+        <attr name="xytextcolor" format="color"/><!-- xy坐标轴文字颜色 -->
+        <attr name="xytextsize" format="dimension"/><!-- xy坐标轴文字大小 -->
+        <attr name="linecolor" format="color"/><!-- 折线图中折线的颜色 -->
+        <attr name="interval" format="dimension"/><!-- x轴各个坐标点水平间距 -->
+        <attr name="bgcolor" format="color"/><!-- 背景颜色 -->
+    </declare-styleable>
+    <declare-styleable name="ProgressWheel">
+        <attr name="matProg_progressIndeterminate" format="boolean" />
+        <attr name="matProg_barColor" format="color" />
+        <attr name="matProg_rimColor" format="color" />
+        <attr name="matProg_rimWidth" format="dimension" />
+        <attr name="matProg_spinSpeed" format="float" />
+        <attr name="matProg_barSpinCycleTime" format="integer" />
+        <attr name="matProg_circleRadius" format="dimension" />
+        <attr name="matProg_fillRadius" format="boolean" />
+        <attr name="matProg_barWidth" format="dimension" />
+        <attr name="matProg_linearProgress" format="boolean" />
+    </declare-styleable>
+</resources>
