@@ -3,15 +3,12 @@ package com.rs.demo.demoactivity;
 import android.util.Log;
 
 import com.rs.demo.basemvp.Api;
-import com.rs.demo.basemvp.BaseObserver;
-import com.rs.demo.basemvp.BasePresenter;
-import com.rs.demo.basemvp.bean.BaseResult;
+import com.rs.demo.basemvp.base.BaseObserver;
+import com.rs.demo.basemvp.base.BasePresenter;
 import com.rs.demo.basemvp.bean.LoginBean;
 
 import java.util.HashMap;
 import java.util.Map;
-
-import retrofit2.Call;
 
 /**
  *
