@@ -13,12 +13,12 @@ import retrofit2.converter.gson.GsonConverterFactory;
  * Created by Rs on 2017/9/12.
  */
 
-public enum Api {
+public enum RetrofitApi {
     INSTANCE;
-    public ServiceInterface serviceInterface;
+    public RequestInterface requestInterface;
     private Retrofit retrofit;
 
-    public Api getDefaultRetrofit(){
+    public RetrofitApi getDefaultRetrofit(){
         retrofit = new Retrofit.Builder()
             .baseUrl(EnvConfig.instance().getWebServiceBaseUrl())
             .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
@@ -29,14 +29,14 @@ public enum Api {
 }
 
 
-    public  ServiceInterface getServiceInterface() {
-        if(serviceInterface !=null){
-            return serviceInterface;
+    public RequestInterface getRequestInterface() {
+        if(requestInterface !=null){
+            return requestInterface;
         }
         if(retrofit == null){
             getDefaultRetrofit();
         }
-        return serviceInterface =  retrofit.create(ServiceInterface.class);
+        return requestInterface =  retrofit.create(RequestInterface.class);
     }
 
 

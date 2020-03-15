@@ -21,18 +21,4 @@ public class ProdConfig extends EnvConfig {
         return "pro";
     }
 
-    @Override
-    public String getShopMailBaseUrl() {
-        return "http://itao.maoye.cn/embedIndex?";
-    }
-
-    @Override
-    public String getWyPayUrl() {
-        return "http://itao.maoye.cn/home/Wypay/WyEntrance?shop_id=240";
-    }
-
-    @Override
-    public String getMlhBaseUrl() {
-        return "http://itao.maoye.cn/";
-    }
 }

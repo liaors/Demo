@@ -27,12 +27,8 @@ public abstract class EnvConfig {
     public abstract String getWebSocketBaseUrl();
 
     public abstract String getEnvName();
-    public abstract String getShopMailBaseUrl();
-
-    public  abstract String getWyPayUrl();
-    public abstract String getMlhBaseUrl();
 
     public enum Stage {
-        DEV, PROD, SHIJINJIN, PRE ,YUNJIN
+        DEV, PROD, PRE
 }
 }

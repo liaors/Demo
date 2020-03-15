@@ -17,9 +17,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <!--<activity android:name=".demoactivity.DemoActivity" />-->
-        <activity android:name=".basemvp.widght.Demo2Activity" />
-        <service android:name=".DemoService"/>
     </application>
 
 </manifest>
