@@ -1,8 +1,6 @@
-package com.rs.demo.basemvp;
+package com.rs.demo.basemvp.base;
 
 import android.support.annotation.CallSuper;
-
-import com.rs.demo.basemvp.bean.BaseResult;
 
 import io.reactivex.Observable;
 import io.reactivex.android.schedulers.AndroidSchedulers;

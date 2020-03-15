@@ -1,4 +1,4 @@
-package com.rs.demo.basemvp;
+package com.rs.demo.basemvp.base;
 
 import android.util.Log;
 

@@ -19,7 +19,7 @@ import android.view.View;
 import android.widget.ImageView;
 import com.rs.demo.DemoService;
 import com.rs.demo.R;
-import com.rs.demo.basemvp.BaseActivity;
+import com.rs.demo.basemvp.base.BaseActivity;
 
 /**
  * Created by Rs on 2018/6/14.
@@ -101,7 +101,7 @@ private ImageView image;
         findViewById(R.id.startBt).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-            mPresenter.login();
+            mPresenter.login(1);
 //                startService(intent);
             }
         });
