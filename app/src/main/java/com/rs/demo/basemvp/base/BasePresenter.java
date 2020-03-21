@@ -12,7 +12,7 @@ import io.reactivex.schedulers.Schedulers;
  * Created by Rs on 2018/6/14.
  */
 
-public class BasePresenter<V extends BaseView>  {
+public abstract class BasePresenter<V extends BaseView>  {
     protected V mView;
     protected CompositeDisposable compositeDisposable;
 
