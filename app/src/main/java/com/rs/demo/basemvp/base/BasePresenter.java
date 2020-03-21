@@ -12,7 +12,7 @@ import io.reactivex.schedulers.Schedulers;
  * Created by Rs on 2018/6/14.
  */
 
-public class BasePresenter<V extends BaseVeiw>  {
+public class BasePresenter<V extends BaseView>  {
     protected V mView;
     protected CompositeDisposable compositeDisposable;
 
@@ -27,7 +27,7 @@ public class BasePresenter<V extends BaseVeiw>  {
     }
 
     @CallSuper
-    protected <T> void request(Observable<T> observable , DisposableObserver<T> observer){
+    protected <C> void request(Observable<C> observable , DisposableObserver<C> observer){
         if(compositeDisposable == null){
             compositeDisposable = new CompositeDisposable();
         }
@@ -37,7 +37,7 @@ public class BasePresenter<V extends BaseVeiw>  {
     }
 
     @CallSuper
-    private void clearDisposables(){
+    protected void clearDisposables(){
         if(compositeDisposable !=null){
             compositeDisposable.clear();
         }

@@ -10,7 +10,7 @@ import java.lang.reflect.ParameterizedType;
  * Created by Rs on 2018/6/14.
  */
 
-public abstract class BaseActivity<V extends BaseVeiw,P extends BasePresenter> extends AppCompatActivity implements BaseVeiw {
+public abstract class BaseActivity<V extends BaseView,P extends BasePresenter> extends AppCompatActivity implements BaseView {
  protected P mPresenter;
 
     @Override
@@ -18,6 +18,8 @@ public abstract class BaseActivity<V extends BaseVeiw,P extends BasePresenter> e
         super.onCreate(savedInstanceState);
         mPresenter = createPresenter(this,1);
         mPresenter.attachView(this);
+        ParameterizedType genericSuperclass = (ParameterizedType) this.getClass().getGenericSuperclass();
+
     }
 
 
