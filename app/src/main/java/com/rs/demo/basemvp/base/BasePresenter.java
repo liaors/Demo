@@ -27,7 +27,7 @@ public abstract class BasePresenter<V extends BaseView>  {
     }
 
     @CallSuper
-    protected <C> void request(Observable<C> observable , DisposableObserver<C> observer){
+    protected <T> void request(Observable<T> observable , DisposableObserver<T> observer){
         if(compositeDisposable == null){
             compositeDisposable = new CompositeDisposable();
         }
