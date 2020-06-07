@@ -18,7 +18,6 @@ public abstract class BaseActivity<V extends BaseView,P extends BasePresenter> e
         super.onCreate(savedInstanceState);
         mPresenter = createPresenter(this,1);
         mPresenter.attachView(this);
-        ParameterizedType genericSuperclass = (ParameterizedType) this.getClass().getGenericSuperclass();
 
     }
 
