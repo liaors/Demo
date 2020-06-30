@@ -10,8 +10,8 @@ import io.reactivex.schedulers.Schedulers;
 
 /**
  * Created by Rs on 2018/6/14.
+ * @mail liaorongs228@163.com
  */
-
 public abstract class BasePresenter<V extends BaseView>  {
     protected V mView;
     protected CompositeDisposable compositeDisposable;

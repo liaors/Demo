@@ -9,7 +9,6 @@ import java.lang.reflect.ParameterizedType;
 /**
  * Created by Rs on 2018/6/14.
  */
-
 public abstract class BaseActivity<V extends BaseView,P extends BasePresenter> extends AppCompatActivity implements BaseView {
  protected P mPresenter;
 
